@@ -4,23 +4,41 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <title>Test!</title>
+        <title>My portfolio</title>
     </head>
     
     <body>
         <div class="flex-container center">
-            <div class="header">Test Header</div>
+            <div class="header">My portfolio</div>
         </div>
 
         <div class="tab-container">
             <div class= "tab-menu">
-                <button class="tab-button" onclick="showTab('Game')">Game</button>
+                <button class="tab-button" onclick="showTab('Unity')">Unity</button>
                 <button class="tab-button" onclick="showTab('WindowsForms')">Windows Forms</button>
                 <button class="tab-button" onclick="showTab('Others')">Others</button>
             </div>
-            <div class ="tab-content" id="Game">
-                <h2>Test tab Game</h2>
+            <!-- Game -->
+            <div class = "tab-content" id="Unity">
+                <div class = "grid-container">
+                    <div class = "grid-item">
+                        <img src = "images/Action_Ninja_Game.png" alt = "Action_Ninja_Game.jpg" class="grid-image" onclick="showModal('Action_Ninja_Game')">
+                        <div class="grid-title"> 五秒忍走</div>
+                        <div id="Action_Ninja_Game" class="modal hidden">
+                            Description
+                        </div>
+                    </div>
+                    <div class = "grid-item">
+                        <img src = "images/Rick_Astely_Picker.png" alt = "Action_Ninja_Game.jpg" class="grid-image" onclick="showModal('Rick_Astely_Picker')">
+                        <div class="grid-title"> Rick Astely Picker</div>
+                        <div id="Rick_Astely_Picker" class="modal hidden">
+                            イギリスの有名歌手Rick Astely Picker様の曲の中からランダムで一曲選んでくれる抽選機。カラオケで歌う曲に悩んでいる時に使用することを考えて制作。曲リストはwikipediaからスクラップしているため新曲が出ても修正する必要なし。大ヒット曲である「never gonna give you up」が選ばれると特殊演出が発生する。
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--Rick Astley Picker -->
+            <!-- WinForms -->
             <div class ="tab-content" id="WindowsForms">
                 <h2>Test tab WindowsForms</h2>
             </div>
@@ -28,6 +46,15 @@
                 <h2>Test tab Others</h2>
             </div>
         </div>
+        <!-- Others -->
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modal-description" class="modal-description"></div>
+            </div>
+            <div class="modal-overlay" onclick="closeModal()"></div>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>

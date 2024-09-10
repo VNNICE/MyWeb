@@ -9,4 +9,20 @@ function showTab(tabId)
     document.getElementById(tabId).classList.add('active');
 }
 
-document.addEventListener('DOMContentLoaded', () => showTab('Game'));
+function showModal(detailsId)
+{
+    const modal = document.getElementById('modal');
+    const description = document.getElementById('modal-description');
+
+    description.textContent = document.getElementById(detailsId).textContent;
+    
+    modal.classList.remove('hidden');
+}
+
+function closeModal() 
+{
+    const modal = document.getElementById('modal');
+    modal.classList.add('hidden');
+}
+
+document.addEventListener('DOMContentLoaded', () => showTab('Unity'));

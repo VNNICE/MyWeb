@@ -11,13 +11,23 @@
         <div class="flex-container center">
             <div class="header">Test Header</div>
         </div>
-        <div class="flex-container center">
-            <div class="inline-flex-item">item 1</div>
-            <div class="inline-flex-item">item 2</div>
-            <div class="inline-flex-item">item 3</div>
-            <div class="inline-flex-item">item 4</div>
-            <div class="inline-flex-item">item 5</div>
+
+        <div class="tab-container">
+            <div class= "tab-menu">
+                <button class="tab-button" onclick="showTab('Game')">Game</button>
+                <button class="tab-button" onclick="showTab('WindowsForms')">Windows Forms</button>
+                <button class="tab-button" onclick="showTab('Others')">Others</button>
+            </div>
+            <div class ="tab-content" id="Game">
+                <h2>Test tab Game</h2>
+            </div>
+            <div class ="tab-content" id="WindowsForms">
+                <h2>Test tab WindowsForms</h2>
+            </div>
+            <div class ="tab-content" id="Others">
+                <h2>Test tab Others</h2>
+            </div>
         </div>
-        
+        <script src="script.js"></script>
     </body>
 </html>

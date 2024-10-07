@@ -14,7 +14,7 @@ function showModal(detailsId)
     const modal = document.getElementById('modal');
     const description = document.getElementById('modal-description');
 
-    description.textContent = document.getElementById(detailsId).textContent;
+    description.innerHTML = document.getElementById(detailsId).innerHTML; 
     
     modal.classList.remove('hidden');
 }

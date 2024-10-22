@@ -64,19 +64,28 @@
             <div class ="tab-content" id="WindowsForms">
                 <h2>Coming Soon</h2>
             </div>
+            <!-- Others -->
             <div class ="tab-content" id="Others">
-                <h2>Coming Soon</h2>
+                <div class = "grid-container">
+                    <div class = "grid-item">
+                        <img src = "Images/ScheduleTable.png" alt = "ScheduleTable.png" class="grid-image" onclick="showModal('ScheduleTable')">
+                        <div class="grid-title">Schedule Table(Korean)</div>
+                        <div id="ScheduleTable" class="modal hidden">
+                            ・制作期間：1日<br>・制作人数：1人<br>・説明：個人用PCにはExcelがインストールされてないことやモバイルでも簡単にスケジュールを確認できればと思い制作。現在日時が作成された日程と一致すると該当する行の背景が黄色で強調され、過ぎた日程は灰色と取り消し線で表示される。
+                            <br><a href="https://vnnice.github.io/Oct2024JapanTrip/">公開ページ</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </>
-        <!-- Others -->
-        <div id="modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div id="modal-description" class="modal-description"></div>
-            </div>
-            <div class="modal-overlay" onclick="closeModal()"></div>
-        </div>
 
+            
+            <div id="modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="modal-description" class="modal-description"></div>
+                </div>
+                <div class="modal-overlay" onclick="closeModal()"></div>
+            </div>
         <script src="script.js"></script>
     </body>
 </html>
